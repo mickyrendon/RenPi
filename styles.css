@@ -45,7 +45,7 @@ p{
     opacity: 0.9;
 }
 .plan-card{
-    background:linear-gradient(to right top, rgba(16, 46, 75, 0.521), rgba(60, 69, 88, 0.74), rgba(45, 73, 102, 0.733));
+    background:linear-gradient(to right top, rgba(16, 46, 75, 0.925), rgba(60, 69, 88, 0.966), rgba(45, 73, 102, 0.993));
     /* background:linear-gradient(to right top, rgb(49, 46, 129), rgba(128, 91, 216, 0.651), rgba(77, 74, 163, 0.719)); */
     /* background:linear-gradient(to right top, rgb(49, 46, 129), rgba(128, 91, 216, 0.541), rgb(249, 168, 212)); */
     /* background:linear-gradient(to right bottom, rgba(17, 24, 39, 0.904), rgba(75, 85, 99, 0.726)); */
