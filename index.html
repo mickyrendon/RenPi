@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/logotipo/favicon/favicon-16x16.png">
+  <!-- <link rel="manifest" href="/site.webmanifest"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <title>RenPi - Agencia Digital</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="scroll-smooth relative">
+<!-- Encabezado -->
+<header class="text-white text-center">
+  <!-- Menu mobile -->
+  <div class="menu-mobile hidde bg-gradient-to-l from-gray-700 via-gray-900 to-black">
+    <ul class="menu-list flex flex-col gap-4">
+      <li>
+          <a href="#us-section">Nosotros</a>
+      </li>
+      <li>
+          <a href="#plans-section">Planes</a>
+      </li>
+      <li>
+          <a href="#services-section">Servicios</a>
+      </li>
+      <li>
+          <a href="#contact-section">Contacto</a>
+      </li>
+  </ul>
+  </div>
+  <nav class="p-4 sticky top-0 z-10 w-full flex justify-between bg-gradient-to-l from-gray-700 via-gray-900 to-black text-white">
+    <button class="logo"></button>
+    <ul class="menu-desktop gap-4">
+        <li>
+            <a href="#us-section">Nosotros</a>
+        </li>
+        <li>
+            <a href="#plans-section">Planes</a>
+        </li>
+        <li>
+            <a href="#services-section">Servicios</a>
+        </li>
+        <li>
+            <a href="#contact-section">Contacto</a>
+        </li>
+    </ul>
+    <button class="menu-m-btn menu-m-icon-rollup"></button>
+</nav>
+  <!-- <figure class="flex justify-center p-8">
+      <img src="./assets/logotipo/logotipo.svg" alt="" class="w-2/5">
+  </figure> -->
+  <div class="video-ctr max-w-full h-2/5 bg-black">
+      <video src="./assets/moodboard/introRenPi.mp4" autoplay controls loop 
+        class="intro-video my-0 mx-auto object-cover" type="video/mp4">
+      </video>
+  </div>
+</header>
+<!-- chat btn -->
+<a href="https://api.whatsapp.com/send?phone=56930575930" target="_blank" class="chat">
+  <button class="chat-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+      <path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"></path><path fill="#fff" d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"></path><path fill="#cfd8dc" d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"></path><path fill="#40c351" d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"></path><path fill="#fff" fill-rule="evenodd" d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z" clip-rule="evenodd"></path>
+      </svg>
+  </button>
+</a>
+<!-- section de nosotros -->
+<section id="us-section" class="us-section bg-gray-100 pb-12">
+  <div class="content">
+    <figure class="flex flex-col items-center pt-8">
+      <img src="./assets/logotipo/logotipo.svg" alt="" class="w-80">
+      <!-- <img src="./assets/moodboard/teamwork1.svg" alt="" class="w-80"> -->
+      <figcaption class="text-lg md:text-xl text-black">potenciando tu presencia en línea</figcaption>
+    </figure>
+    <p class="max-w-3xl text-center">
+      Somos una agencia digital joven. creativa e innovadora dedicada a ayudar a nuestros clientes a alcanzar sus objetivos en línea. Nuestro equipo está compuesto por expertos en diseño y desarrollo web, marketing digital y fotografía, trabajamos juntos para ofrecer soluciones personalizadas y efectivas. <br>
+      Nos apasiona lo que hacemos y nos esforzamos por superar las expectativas de nuestros clientes en cada proyecto. ¡Contáctanos para saber cómo podemos ayudarte a hacer crecer tu negocio en línea! ¿Te gustaría saber más sobre nuestros servicios?
+    </p>
+    <button class="cta max-w-fit self-center bg-gradient-to-r from-sky-400 to-blue-500 text-white py-2 px-4 rounded-md inline-block">¡Contactanos!</button>
+  </div>
+</section>
+
+  <!-- Sección de planes o paquetes de servicios -->
+  <section id="plans-section" class="bg-white text-black py-12 px-2 grid gap-24 place-items-center">
+    <div class="plan-container">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Nuestros paquetes</h2>
+      <div class="p-card-ctr grid grid-cols-1 place-items-center md:grid-cols-3 gap-8">
+        <div class="plan-card bg-gray-100 p-8 shadow-md w-96 md:w-80 md:h-full grid gap-4">
+          <h3 class="plan-title text-xl font-bold mb-4 text-center">Paquete Básico</h3>
+          <ul class="list-disc list-inside">
+            <li>diseño web (hasta 5 páginas)</li>
+            <li>gestión de redes sociales (hasta 2 plataformas)</li>
+            <li>creación de contenidos (hasta 10 piezas al mes)</li>
+            <li>identidad de marca (logotipo y manual)</li>
+            <br>
+            <span>$1.200.000 CLP al mes</span>
+            <!-- Agrega más servicios -->
+          </ul>
+          <p class="mt-4 text-center">
+            <a href="#" class="bg-gradient-to-r from-sky-400 to-blue-500 text-white py-2 px-4 rounded-md inline-block">Contratar</a>
+          </p>
+        </div>
+        <!-- Agrega más paquetes -->
+        <div class="plan-card bg-gray-100 p-8 shadow-md w-96 md:w-80 md:h-full grid  gap-4">
+          <h3 class="plan-title text-xl font-bold mb-4 text-center">Paquete Avanzado</h3>
+          <ul class="list-disc list-inside">
+            <li>diseño web (hasta 20 páginas)</li>
+            <li>gestión de redes sociales (hasta 6 plataformas)</li>
+            <li>creación de contenidos (hasta 40 piezas al mes)</li>
+            <li>identidad de marca (logotipo, manual, eslogan y tono)</li>
+            <li>posicionamiento web (SEO avanzado)</li>
+            <li>publicidad online (SEM avanzado)</li>
+            <li>analítica web (reportes mensuales)</li>
+            <li>fotografía (hasta 50 imágenes al mes).</li>
+            <br>
+            <span>$4.800.000 CLP al mes.</span>
+            <!-- Agrega más servicios -->
+          </ul>
+          <p class="mt-4 text-center">
+            <a href="#" class="bg-gradient-to-r from-sky-400 to-blue-500 text-white py-2 px-4 rounded-md inline-block">Contratar</a>
+          </p>
+        </div>
+        <div class="plan-card bg-gray-100 p-8 shadow-md w-96 md:w-80 md:h-full grid gap-4">
+            <h3 class="plan-title text-xl font-bold mb-4 text-center">Paquete Intermedio</h3>
+            <ul class="list-disc list-inside">
+              <li>Diseño Web (hasta 10 páginas)</li>
+              <li>Gestión de Redes Sociales (hasta 4 plataformas)</li>
+              <li>Creación de Contenidos (hasta 20 piezas al mes)</li>
+              <li>Identidad de Marca (logotipo, manual y eslogan)</li>
+              <li>Posicionamiento Web (SEO básico)</li>
+              <li>Publicidad Online (SEM básico).</li>
+              <br>
+              <span>$2.400.000 CLP al mes.</span>
+              <!-- Agrega más servicios -->
+            </ul>
+            <p class="mt-4 text-center">
+              <a href="#" class="bg-gradient-to-r from-sky-400 to-blue-500 text-white py-2 px-4 rounded-md inline-block">Contratar</a>
+            </p>
+        </div>
+      </div>
+    </div>
+    <!-- seccion paquete a medida -->
+    <div class="exclusive-pack">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Paquete Exclusivo</h2>
+      <p class="max-w-3xl text-center">El servicio de paquete exclusivo ofrece una experiencia única y personalizada para tus necesidades comerciales. Con un enfoque centrado en el cliente, nuestro equipo de expertos trabajará contigo para diseñar estrategias digitales específicas que impulsen el éxito de tu negocio. Este paquete exclusivo está diseñado para adaptarse a tus necesidades y presupuesto, brindándote una solución integral y efectiva para impulsar tu presencia en línea.</p>
+      
+      <div class="plan-card bg-gray-100 p-8 shadow-md w-96 md:w-80 md:h-full grid gap-4">
+        <h3 class="plan-title text-xl font-bold mb-4 text-center">Paquete Exclusivo</h3>
+        <ul class="list-disc list-inside">
+          <li>diseño web Personalizado</li>
+          <li>Estrategia de Marketing Digital</li>
+          <li>posicionamiento web (SEO básico)</li>
+          <li>publicidad online (SEM básico).</li>
+          <li>Análisis y Seguimiento</li>
+          <li>Creación de contenidos</li>
+          <li>Identidad de Marca</li>
+          <li>Consultoría Personalizada</li>
+          <br>
+          <span>¡Trabajamos con tu presupuesto!</span>
+          <!-- Agrega más servicios -->
+        </ul>
+        <p class="mt-4 text-center">
+          <a href="#" class="bg-gradient-to-r from-sky-400 to-blue-500 text-white py-2 px-4 rounded-md inline-block">Contratar</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Sección explicativa de los servicios -->
+  <section id="services-section" class="services-section bg-gradient-to-l from-gray-700 via-gray-900 to-black text-white py-16">
+    <div class="services-ctr container mx-auto grid">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Nuestros Servicios</h2>
+      <div class="service-card card-block">
+        <div class="card-img p-4 w-72 h-72 rounded-full  bg-slate-50 shadow-md shadow-gray-800">
+          <!-- Agrega una ilustración o imagen consistente -->
+          <figure class="flex w-full h-full">
+            <img src="./assets/moodboard/target.svg" alt="" class="w-full">
+          </figure>
+        </div>
+        <div class="card-content">
+        <h3 class="text-xl">Estrategia digital</h3>
+          <p class="text-md">
+            consiste en definir los objetivos, las acciones y las herramientas que se utilizarán para promocionar una marca, un producto o un servicio en Internet. Una estrategia digital debe estar basada en un análisis del mercado, la competencia, el público objetivo y los recursos disponible
+          </p>
+        </div>
+      </div>
+      <div class="service-card card-block">
+        <div class="card-img p-4 w-72 h-72 rounded-full  bg-slate-50 shadow-md shadow-gray-800">
+          <!-- Agrega una ilustración o imagen consistente -->
+          <figure class="flex w-full h-full">
+            <img src="./assets/moodboard/seo.svg" alt="" class="w-full">
+          </figure>
+        </div>
+        <div class="card-content">
+            <h3 class="text-xl">Posicionamiento web (SEO):</h3>
+          <p class="text-md">
+             consiste en optimizar un sitio web para que aparezca en los primeros lugares de los resultados de búsqueda de los motores como Google o Bing. Para ello, se deben mejorar aspectos técnicos, de contenido y de autoridad del sitio web, utilizando palabras clave relevantes para el negocio
+          </p>
+        </div>
+      </div>
+      <div class="service-card card-block">
+        <div class="card-img p-4 w-72 h-72 rounded-full  bg-slate-50 shadow-md shadow-gray-800">
+          <!-- Agrega una ilustración o imagen consistente -->
+          <figure class="flex w-full h-full">
+            <img src="./assets/moodboard/sem.svg" alt="" class="w-full">
+          </figure>
+        </div>
+        <div class="card-content">
+            <h3 class="text-xl">Publicidad online (SEM):</h3>
+          <p class="text-md">
+            Publicidad online (SEM): consiste en crear y gestionar campañas de anuncios pagados en plataformas como Google Ads o Facebook Ads. Estas campañas permiten llegar a un público específico, segmentado por criterios como la ubicación, el género, la edad, los intereses o el comportamiento
+          </p>
+        </div>
+      </div>
+      <div class="service-card card-block">
+        <div class="card-img p-4 w-72 h-72 rounded-full  bg-slate-50 shadow-md shadow-gray-800">
+          <!-- Agrega una ilustración o imagen consistente -->
+          <figure class="flex w-full h-full">
+            <img src="./assets/moodboard/redes-sociales.svg" alt="" class="w-full">
+          </figure>
+        </div>
+        <div class="card-content">
+            <h3 class="text-xl">Gestión de redes sociales:</h3>
+          <p class="text-md">
+            Gestión de redes sociales: consiste en crear y mantener perfiles en las principales redes sociales como Facebook, Twitter, Instagram o LinkedIn. El objetivo es generar contenido de valor, interactuar con los usuarios, aumentar el alcance y la visibilidad de la marca y fidelizar a los clientes
+          </p class="card-content">
+        </div>
+      </div>
+      <div class="service-card card-block">
+        <div class="card-img p-4 w-72 h-72 rounded-full  bg-slate-50 shadow-md shadow-gray-800">
+          <!-- Agrega una ilustración o imagen consistente -->
+          <figure class="flex w-full h-full">
+            <img src="./assets/moodboard/creacion-contenido.svg" alt="" class="w-full">
+          </figure>
+        </div>
+        <div class="card-content">
+            <h3 class="text-xl">Creación de contenidos:</h3>
+          <p class="text-md">
+            Creación de contenidos: consiste en producir textos, imágenes, vídeos, infografías u otros formatos que aporten información útil, entretenida o educativa a los usuarios. El contenido debe estar alineado con la estrategia digital, las palabras clave y los objetivos de la marca
+          </p>
+        </div>
+      </div>
+      <div class="service-card card-block">
+        <div class="card-img p-4 w-72 h-72 rounded-full  bg-slate-50 shadow-md shadow-gray-800">
+          <!-- Agrega una ilustración o imagen consistente -->
+          <figure class="flex w-full h-full">
+            <img src="./assets/moodboard/desarrollo-web.svg" alt="" class="w-full">
+          </figure>
+        </div>
+        <div class="card-content">
+            <h3 class="text-xl">Diseño web:</h3>
+          <p class="text-md">
+             consiste en crear o mejorar el aspecto visual y funcional de un sitio web. El diseño web debe ser atractivo, intuitivo, responsive (adaptado a diferentes dispositivos) y optimizado para el SEO
+          </p>
+        </div>
+      </div>
+      <div class="service-card card-block">
+        <div class="card-img p-4 w-72 h-72 rounded-full  bg-slate-50 shadow-md shadow-gray-800">
+          <!-- Agrega una ilustración o imagen consistente -->
+          <figure class="flex w-full h-full">
+            <img src="./assets/moodboard/analitica.svg" alt="" class="w-full">
+          </figure>
+        </div>
+        <div class="card-content">
+            <h3 class="text-xl">Analítica web:</h3>
+          <p class="text-md">
+            Analítica web: consiste en medir y analizar el rendimiento de las acciones digitales, utilizando herramientas como Google Analytics o Facebook Insights. La analítica web permite conocer el tráfico, las conversiones, el comportamiento y la satisfacción de los usuarios, así como identificar oportunidades de mejora
+          </p>
+        </div>
+      </div>
+      <div class="service-card card-block">
+        <div class="card-img p-4 w-72 h-72 rounded-full  bg-slate-50 shadow-md shadow-gray-800">
+          <!-- Agrega una ilustración o imagen consistente -->
+          <figure class="flex w-full h-full">
+            <img src="./assets/moodboard/fotografia.svg" alt="" class="w-full">
+          </figure>
+        </div>
+        <div class="card-content">
+            <h3 class="text-xl">Fotografía:</h3>
+          <p class="text-md">
+           consiste en capturar y editar imágenes profesionales para mostrar el producto o servicio de una forma atractiva y persuasiva. La fotografía puede mejorar la imagen de marca, el posicionamiento web, la publicidad online, el contenido de redes sociales y el diseño web
+          </p>
+        </div>
+      </div>
+      <div class="service-card card-block">
+        <div class="card-img p-4 w-72 h-72 rounded-full  bg-slate-50 shadow-md shadow-gray-800">
+          <!-- Agrega una ilustración o imagen consistente -->
+          <figure class="flex w-full h-full">
+            <img src="./assets/moodboard/branding.svg" alt="" class="w-full">
+          </figure>
+        </div>
+        <div class="card-content">
+            <h3 class="text-xl">Identidad de marca:</h3>
+          <p class="text-md">
+            consiste en crear o mejorar la representación visual y verbal de una marca, que incluye elementos como el logotipo, los colores, la tipografía, el eslogan, el tono y la personalidad
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="contact-section" class="bg-white text-black py-12">
+    <div class="form container mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">¡Contacta con nosotros!</h2>
+      <h3 class=" text-lg md:text-xl mb-8">Estamos listos para ayudarte a lograr tus objetivos digitales.</h3>
+      <!-- Formulario de contacto -->
+      <form class="p-4 max-w-md mx-auto">
+        <!-- Nombre -->
+        <div class="mb-4">
+          <label class="block font-semibold mb-2 text-start" for="nombre">Nombre</label>
+          <input
+            class="w-full h-8 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+          />
+        </div>
+
+        <!-- Email -->
+        <div class="mb-4">
+          <label class="block font-semibold mb-2 text-start" for="email">Email</label>
+          <input
+            class="w-full h-8 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <!-- Mensaje -->
+        <div class="mb-4">
+          <label class="block font-semibold mb-2 text-start" for="mensaje">Mensaje</label>
+          <textarea
+            class="w-full h-32 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            id="mensaje"
+            name="mensaje"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Botón de enviar -->
+        <div class="text-center">
+          <button
+            type="submit"
+            class="submit-btn bg-gradient-to-r from-sky-400 to-blue-500 text-white py-2 px-6 rounded-md font-medium hover:bg-blue-600"
+          >
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Pie de página -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto grid place-items-center">
+      <figure class="flex justify-center p-8 w-full">
+        <img src="./assets/logotipo/logotipo.svg" alt="" class="w-1/5">
+    </figure>
+      <p class="text-center">Derechos Reservados &copy; Agencia Digital 2023</p>
+    </div>
+  </footer>
+ 
+  <!-- Scripts de Three.js y personalizados -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
