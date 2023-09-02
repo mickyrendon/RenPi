@@ -13,8 +13,8 @@ p{
 }
 .chat{
     position: sticky;
-    top: 90vh;
-    left: 90vw;
+    top: 95vh;
+    left: 83vw;
     z-index: 9;
 }
 .chat-btn{
@@ -40,14 +40,15 @@ p{
 .content p, .form p, .form h3, .exclusive-pack p{
     color:#030508;
 }
-.plan-container{
-    max-width: 60%;
-}
+
 .plan-title{
     opacity: 0.9;
 }
 .plan-card{
-    background:linear-gradient(to right bottom, rgba(17, 24, 39, 0.904), rgba(75, 85, 99, 0.897));
+    background:linear-gradient(to right top, rgba(16, 46, 75, 0.521), rgba(60, 69, 88, 0.74), rgba(45, 73, 102, 0.733));
+    /* background:linear-gradient(to right top, rgb(49, 46, 129), rgba(128, 91, 216, 0.651), rgba(77, 74, 163, 0.719)); */
+    /* background:linear-gradient(to right top, rgb(49, 46, 129), rgba(128, 91, 216, 0.541), rgb(249, 168, 212)); */
+    /* background:linear-gradient(to right bottom, rgba(17, 24, 39, 0.904), rgba(75, 85, 99, 0.726)); */
     border-radius: 0.3rem;
     color: whitesmoke;
     backdrop-filter: blur(5px);
@@ -114,14 +115,14 @@ p{
     justify-content: center;
 }
 .content, .exclusive-pack{
-    max-width: 80%;
     display: grid;
     place-items: center;
     gap: 2rem;
     text-align: center;
 }
-
-
+.content, .exclusive-txt-content{
+    max-width: 80%;
+}
 .plans-section{
     padding: 2rem 0.5rem;
     display: flex;
@@ -283,6 +284,9 @@ p{
         transform: scale(1.01);
         transition: ease-in 80ms;
         cursor: pointer;
+    }
+    .chat{
+        left: 90vw;
     }
 }
 
