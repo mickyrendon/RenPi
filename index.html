@@ -9,17 +9,19 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/logotipo/favicon/favicon-16x16.png">
   <!-- <link rel="manifest" href="/site.webmanifest"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <title>RenPi - Agencia Digital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./styles.css">
+  <title>RenPi - Agencia Digital</title>
 </head>
-<body class="scroll-smooth relative overflow-hidden">
-<!-- preloader -->
-<!-- <div class="preloader w-screen h-screen fixed top-0 z-30 grid place-items-center bkg-main-black ov-hidden animate__fadeIn"> -->
-<div class="preloader absolute w-screen h-screen z-20 bg-gradient-to-l from-gray-700 via-gray-900 to-black grid place-items-center ">
-  <figure>
-    <img src="./assets/logotipo/logotipo.svg" alt="preloader-img" class="w-1/2 h-96">
-  </figure>
-</div>
+<body class="h-full text-base overflow-hidden scroll-smooth">
+  <!-- preloader -->
+  <div class="preloader w-screen h-screen fixed top-0 z-30 bg-gradient-to-l from-gray-700 via-gray-900 to-black overflow-hidden animate__animated">
+      <div class="w-full h-full grid place-items-center">
+          <figure class="w-auto h-auto flex flex-col items-center">
+              <img src="./assets/logotipo/logotipo.svg" alt="preloader-img" class="preloader-img w-40 h-40 animate-pulse">
+          </figure>
+      </div>
+  </div>
 <!-- Encabezado -->
 <header class="text-white text-center">
   <!-- Menu mobile -->
@@ -74,16 +76,17 @@
       </svg>
   </button>
 </a>
-<!-- section de nosotros -->
+<main class="">
+  <!-- section de nosotros -->
 <section id="us-section" class="us-section bg-gray-100 pb-12">
   <div class="content">
     <figure class="flex flex-col items-center pt-8">
-      <img src="./assets/logotipo/logotipo.svg" alt="" class="w-80">
+      <img src="./assets/logotipo/logotipo.svg" alt="renpi-logo" class="w-80">
       <!-- <img src="./assets/moodboard/teamwork1.svg" alt="" class="w-80"> -->
       <figcaption class="text-lg md:text-xl text-black">potenciando tu presencia en línea</figcaption>
     </figure>
     <p class="max-w-3xl text-center">
-      Somos una agencia digital joven. creativa e innovadora dedicada a ayudar a nuestros clientes a alcanzar sus objetivos en línea. Nuestro equipo está compuesto por expertos en diseño y desarrollo web, marketing digital y fotografía, trabajamos juntos para ofrecer soluciones personalizadas y efectivas. <br>
+      Somos una Agencia Digital joven, creativa e innovadora dedicada a ayudar a nuestros clientes a alcanzar sus objetivos en línea. Nuestro equipo está compuesto por expertos en diseño y desarrollo web, marketing digital y fotografía, trabajamos juntos para ofrecer soluciones personalizadas y efectivas. <br>
       Nos apasiona lo que hacemos y nos esforzamos por superar las expectativas de nuestros clientes en cada proyecto. ¡Contáctanos para saber cómo podemos ayudarte a hacer crecer tu negocio en línea! ¿Te gustaría saber más sobre nuestros servicios?
     </p>
     <button class="cta max-w-fit self-center bg-gradient-to-r from-sky-400 to-blue-500 text-white py-2 px-4 rounded-md inline-block">¡Contactanos!</button>
@@ -367,18 +370,18 @@
       </form>
     </div>
   </section>
-  <!-- Pie de página -->
-  <footer class="bg-gray-900 text-white py-8">
-    <div class="container mx-auto grid place-items-center">
-      <figure class="flex justify-center p-8 w-full">
-        <img src="./assets/logotipo/logotipo.svg" alt="" class="w-1/5">
-    </figure>
-      <p class="text-center">Derechos Reservados &copy; Agencia Digital 2023</p>
-    </div>
-  </footer>
+</main>
+<!-- Pie de página -->
+<footer class="bg-gray-900 text-white py-8">
+  <div class="container mx-auto grid place-items-center">
+    <figure class="flex justify-center p-8 w-full">
+      <img src="./assets/logotipo/logotipo.svg" alt="" class="w-1/5">
+  </figure>
+    <p class="text-center">Derechos Reservados &copy; Agencia Digital 2023</p>
+  </div>
+</footer>
  
-  <!-- Scripts de Three.js y personalizados -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<!-- Scripts de Three.js y personalizados -->
   <script src="./index.js" type="module"></script>
 </body>
 </html>

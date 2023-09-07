@@ -10,17 +10,17 @@ export const deleteLoader = () => {
     ]
     
     if(loaderCtr.childElementCount > 0){
-
+        
         loaderCtr.classList.add('animate__fadeOut')
         
         setTimeout(() => {
             loaderCtr.classList.remove('w-screen', 'h-screen', 'fixed', 'top-0', 'z-30', 'grid', 'place-items-center', 'bkg-main-black', 'ov-hidden', 'animate__fadeIn')
             loaderCtr.classList.add('hidde')
             body.classList.remove('overflow-hidden')
-        }, 3000)
-        
+        }, 300)
+        // TODO, agregar la url de la img del preloader desde js
         hiddenElements.forEach(e => { return e.classList.remove('hidde') })
-
+        
         const arr =  [...loaderCtr.childNodes]
         
         arr.forEach(element => {
