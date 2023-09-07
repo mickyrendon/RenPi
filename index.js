@@ -72,7 +72,7 @@ const deleteLoader = () => {
     const loaderCtr = document.querySelector('.preloader')
     
     if(loaderCtr.childElementCount > 0){
-        body.classList.toggle('overflow-none')
+        // body.classList.toggle('overflow-none')
 
         // body.classList.remove('ov-hidden')
         // body.classList.add('overflow-auto')
@@ -84,6 +84,7 @@ const deleteLoader = () => {
         setTimeout(() => {
             loaderCtr.classList.remove('w-screen', 'h-screen', 'fixed', 'top-0', 'z-30', 'grid', 'place-items-center', 'bkg-main-black', 'ov-hidden', 'animate__fadeIn')
             loaderCtr.classList.add('hidde')
+            body.classList.remove('overflow-hidden')
         }, 300)
 
 
