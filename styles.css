@@ -267,6 +267,7 @@ p{
     .plan-card{
         grid-template-rows: auto;
         place-items: center;
+        transition: ease-out 200ms;
     }
     .plan-card:first-of-type{
         transform: scale(0.9);
@@ -283,7 +284,7 @@ p{
         border-radius: 0.3rem;
         box-shadow: 3px 4px 6px 1px rgba(0, 0, 0, 0.55);
         transform: scale(1.01);
-        transition: ease-in 80ms;
+        transition: ease-in 100ms;
         cursor: pointer;
     }
     .chat{
@@ -291,6 +292,35 @@ p{
     }
 }
 
+
+
+/**Styling scrollable elements*/
+
+.js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+  
+  .js-scroll.scrolled {
+    opacity: 1;
+  }
+  
+  .scrolled.fade-in {
+    animation: fade-in 1s ease-in-out both;
+  }
+  
+  .scrolled.fade-in-bottom {
+    animation: fade-in-bottom 1s ease-in-out both;
+  }
+  
+  .scrolled.slide-left {
+    animation: slide-in-left 1s ease-in-out both;
+  }
+  
+  .scrolled.slide-right {
+    animation: slide-in-right 1s ease-in-out both;
+  }
+/* keyframes */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -318,3 +348,108 @@ p{
         transform: translateY(0); /* Muestra el texto en su posición original */
     }
 }
+@keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    /* 100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    } */
+  }
+  
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(100px);
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    /* 100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    } */
+  }
+  
+  @keyframes fade-in-bottom {
+    0% {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    /* 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    } */
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* preloader animation */
+  /* Definir la animación */
+@keyframes bounce-in-out {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Aplicar la animación al elemento */
+/* Definir la animación */
+/* @keyframes bounce-in-out {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Aplicar la animación al elemento *
+  .element{
+    animation: bounce-in-out 2s infinite;
+  }
+   */
+  /* Definir la animación */
+@keyframes opacidad {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Aplicar la animación al elemento */
+  .element{
+    animation-name: opacidad;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
