@@ -1,3 +1,6 @@
+*{
+    scroll-behavior: smooth;
+}
 /* reset video styles */
 video{
     width: fit-content;
@@ -13,13 +16,15 @@ p{
 }
 .chat{
     position: sticky;
-    top: 95vh;
+    top: 90vh;
     left: 83vw;
     z-index: 9;
 }
 .chat-btn{
     width: 4rem;
     height: 4rem;
+    display: flex;
+    align-items: center;
     text-align: end;
     background-image: linear-gradient(to right, rgb(56, 189, 248), rgb(59, 130, 246));
     /* background-image: url('./assets/whatsApp.svg'); */
